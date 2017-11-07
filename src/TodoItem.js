@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 const ESCAPE_KEY = 27;
@@ -69,6 +70,15 @@ class TodoItem extends Component {
       </li>
     );
   }
+}
+TodoItem.propTypes = {
+  todo: PropTypes.object.isRequired,
+  // editing: PropTypes.bool,
+  // onEdit: PropTypes.func.isRequired,
+  // onToggle: PropTypes.func.isRequired,
+  // onDestroy: PropTypes.func.isRequired,
+  // onSave: PropTypes.func.isRequired,
+  // onCancel: PropTypes.func.isRequired
 }
 
 export default TodoItem;

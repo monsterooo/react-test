@@ -93,7 +93,7 @@ class App extends Component {
           editing={this.state.editing === todo.id}
           onDestroy={this.destroy.bind(this, todo)}
           onSave={this.save.bind(this, todo)}
-          onCancel={this.cancel}
+          onCancels={this.cancel}
         />
       )
     });
